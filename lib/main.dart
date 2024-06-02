@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tabu/Materials/Buttons.dart';
 import 'package:tabu/Materials/appTheme.dart';
+import 'package:tabu/gameStartPage.dart';
 import 'package:tabu/settings.dart';
 
 void main() {
@@ -46,11 +47,16 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Buttons().mainPageButton(
-                    text: "Başla",
+                    text: "Oyna",
                     radius: 5,
                     width: 150,
                     height: 150,
-                    onPressedFunction: () {}),
+                    onPressedFunction: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const GameStartpage()));
+                    }),
                 const SizedBox(
                   width: 10,
                 ),
