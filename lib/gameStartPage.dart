@@ -3,6 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:tabu/Materials/buttons.dart';
 import 'package:tabu/Materials/sizedBoxes.dart';
 import 'package:tabu/Materials/textFields.dart';
+import 'package:tabu/gamePage.dart';
 
 class GameStartpage extends StatefulWidget {
   const GameStartpage({super.key});
@@ -110,7 +111,12 @@ class _GameStartpageState extends State<GameStartpage> {
                       height: 50,
                       width: 50,
                       radius: 5,
-                      onPressedFunction: () {}),
+                      onPressedFunction: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const GamePage()));
+                      }),
                 ],
               )
             ],
