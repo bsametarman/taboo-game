@@ -1,0 +1,32 @@
+[
+    {
+        "word": "KALEM",
+        "forbidden_words": [
+            "KURŞUN",
+            "UÇLU",
+            "SİLGİ",
+            "YAZI",
+            "DEFTER"
+        ]
+    },
+    {
+        "word": "ARABA",
+        "forbidden_words": [
+            "TEKERLE",
+            "MOTOR",
+            "SÜRMEK",
+            "BENZİN",
+            "DİZEL"
+        ]
+    },
+    {
+        "word": "BİLGİSAYAR",
+        "forbidden_words": [
+            "KLAVYE",
+            "LAPTOP",
+            "İŞLEMCİ",
+            "MASAÜSTÜ",
+            "FARE"
+        ]
+    }
+]
