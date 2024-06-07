@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:tabu/Materials/Buttons.dart';
 import 'package:tabu/Materials/appTheme.dart';
+import 'package:tabu/Materials/sizedBoxes.dart';
 import 'package:tabu/gameStartPage.dart';
+import 'package:tabu/howToPlayPage.dart';
 import 'package:tabu/settings.dart';
 
 void main() {
@@ -34,6 +36,8 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -49,8 +53,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 Buttons().mainPageButton(
                     text: "Oyna",
                     radius: 5,
-                    width: 150,
-                    height: 150,
+                    width: screenWidth * 0.15,
+                    height: screenWidth * 0.15,
                     onPressedFunction: () {
                       Navigator.push(
                           context,
@@ -61,17 +65,30 @@ class _MyHomePageState extends State<MyHomePage> {
                   width: 10,
                 ),
                 Buttons().mainPageButton(
-                    text: "Ayarlar",
-                    radius: 5,
-                    width: 150,
-                    height: 150,
-                    onPressedFunction: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const Settings()));
-                    }),
+                  text: "Ayarlar",
+                  radius: 5,
+                  width: screenWidth * 0.15,
+                  height: screenWidth * 0.15,
+                  onPressedFunction: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const Settings()));
+                  },
+                ),
               ],
+            ),
+            SizedBoxes().verticalSizedBox(),
+            Buttons().mainPageButton(
+              text: "Nasıl Oynanır?",
+              width: screenWidth * 0.3,
+              height: screenWidth * 0.1,
+              onPressedFunction: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const HowToPlayPage()));
+              },
             ),
           ],
         ),
