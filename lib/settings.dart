@@ -104,7 +104,7 @@ class _SettingsState extends State<Settings> {
                     min: 15,
                     max: 180,
                     divisions: 11,
-                    label: _timeValue.round().toString(),
+                    label: _timeValue.round().toInt().toString(),
                     onChanged: (double value) {
                       setState(() {
                         _timeValue = value;
@@ -117,7 +117,7 @@ class _SettingsState extends State<Settings> {
                   width: 5,
                 ),
                 Text(
-                  "${_timeValue.toString()} sn",
+                  "${_timeValue.toInt().toString()} sn",
                   style: const TextStyle(fontWeight: FontWeight.bold),
                 ),
               ],
@@ -141,7 +141,7 @@ class _SettingsState extends State<Settings> {
                     min: 1,
                     max: 10,
                     divisions: 9,
-                    label: _passCount.round().toString(),
+                    label: _passCount.round().toInt().toString(),
                     onChanged: (double value) {
                       setState(() {
                         _passCount = value;
@@ -154,7 +154,7 @@ class _SettingsState extends State<Settings> {
                   width: 5,
                 ),
                 Text(
-                  _passCount.toString(),
+                  _passCount.toInt().toString(),
                   style: const TextStyle(fontWeight: FontWeight.bold),
                 ),
               ],
@@ -178,7 +178,7 @@ class _SettingsState extends State<Settings> {
                     min: 1,
                     max: 5,
                     divisions: 4,
-                    label: _tabooMinusPoint.round().toString(),
+                    label: _tabooMinusPoint.round().toInt().toString(),
                     onChanged: (double value) {
                       setState(() {
                         _tabooMinusPoint = value;
@@ -191,7 +191,7 @@ class _SettingsState extends State<Settings> {
                   width: 5,
                 ),
                 Text(
-                  _tabooMinusPoint.toString(),
+                  _tabooMinusPoint.toInt().toString(),
                   style: const TextStyle(fontWeight: FontWeight.bold),
                 ),
               ],
@@ -215,7 +215,7 @@ class _SettingsState extends State<Settings> {
                     min: 30,
                     max: 300,
                     divisions: 9,
-                    label: _pointToWin.round().toString(),
+                    label: _pointToWin.round().toInt().toString(),
                     onChanged: (double value) {
                       setState(() {
                         _pointToWin = value;
@@ -228,7 +228,7 @@ class _SettingsState extends State<Settings> {
                   width: 5,
                 ),
                 Text(
-                  _pointToWin.toString(),
+                  _pointToWin.toInt().toString(),
                   style: const TextStyle(fontWeight: FontWeight.bold),
                 ),
               ],
