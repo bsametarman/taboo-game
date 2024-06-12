@@ -1,16 +1,15 @@
-# tabu
+# tabu / taboo
 
-A new Flutter project.
+Taboo game clone. Coded with dart, flutter.
 
-## Getting Started
+## In Game Footage
 
-This project is a starting point for a Flutter application.
+<img src="/readmeAssets/mainmenu.jpg" width="20%"></img>
+<img src="/readmeAssets/settings.jpg" width="20%"></img>
+<img src="/readmeAssets/howtoplaypage.jpg" width="20%"></img>
+<img src="/readmeAssets/teamnamepage.jpg" width="20%"></img>
+<img src="/readmeAssets/teama.jpg" width="20%"></img>
+<img src="/readmeAssets/scorepage.jpg" width="20%"></img>
+<img src="/readmeAssets/teamb.jpg" width="20%"></img>
+<img src="/readmeAssets/scorepagewin.jpg" width="20%"></img>
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
